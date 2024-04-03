@@ -9,7 +9,31 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Added horizontal gradient as background
+    /*var gradientLayer = CAGradientLayer()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.red.cgColor,
+                                UIColor.yellow.cgColor,
+                                UIColor.green.cgColor,
+                                UIColor.blue.cgColor]
+        gradientLayer.transform = CATransform3DMakeRotation(CGFloat.pi / 2, 0, 0, 1)
+        
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        gradientLayer.frame = view.bounds
+    }*/
+    
+    //Playing around with adding views
     /*override func viewDidLoad() {
         super.viewDidLoad()
         
