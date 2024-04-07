@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D75AA0902BC2969800690CF3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA08F2BC2969800690CF3 /* MapViewController.swift */; };
+		D75AA09A2BC29BDF00690CF3 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA0992BC29BDF00690CF3 /* QuizViewController.swift */; };
 		D7D2AC4A2BBDB48600BA256B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2AC492BBDB48600BA256B /* AppDelegate.swift */; };
 		D7D2AC4C2BBDB48600BA256B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2AC4B2BBDB48600BA256B /* SceneDelegate.swift */; };
 		D7D2AC4E2BBDB48600BA256B /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2AC4D2BBDB48600BA256B /* ConversionViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		D75AA08F2BC2969800690CF3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D75AA0992BC29BDF00690CF3 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		D7D2AC462BBDB48600BA256B /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D2AC492BBDB48600BA256B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7D2AC4B2BBDB48600BA256B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,14 +103,15 @@
 		D7D2AC482BBDB48600BA256B /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
-				D75AA08F2BC2969800690CF3 /* MapViewController.swift */,
 				D7D2AC492BBDB48600BA256B /* AppDelegate.swift */,
 				D7D2AC4B2BBDB48600BA256B /* SceneDelegate.swift */,
+				D75AA08F2BC2969800690CF3 /* MapViewController.swift */,
 				D7D2AC4D2BBDB48600BA256B /* ConversionViewController.swift */,
 				D7D2AC4F2BBDB48600BA256B /* Main.storyboard */,
 				D7D2AC522BBDB48700BA256B /* Assets.xcassets */,
 				D7D2AC542BBDB48700BA256B /* LaunchScreen.storyboard */,
 				D7D2AC572BBDB48700BA256B /* Info.plist */,
+				D75AA0992BC29BDF00690CF3 /* QuizViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D2AC4E2BBDB48600BA256B /* ConversionViewController.swift in Sources */,
+				D75AA09A2BC29BDF00690CF3 /* QuizViewController.swift in Sources */,
 				D7D2AC4A2BBDB48600BA256B /* AppDelegate.swift in Sources */,
 				D7D2AC4C2BBDB48600BA256B /* SceneDelegate.swift in Sources */,
 				D75AA0902BC2969800690CF3 /* MapViewController.swift in Sources */,

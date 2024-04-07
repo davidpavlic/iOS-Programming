@@ -16,6 +16,7 @@
 		D74215742BA8D63700902BB6 /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74215732BA8D63700902BB6 /* QuizTests.swift */; };
 		D742157E2BA8D63700902BB6 /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D742157D2BA8D63700902BB6 /* QuizUITests.swift */; };
 		D74215802BA8D63700902BB6 /* QuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D742157F2BA8D63700902BB6 /* QuizUITestsLaunchTests.swift */; };
+		D75AA0982BC29B6300690CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75AA0962BC29B6300690CF3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D74215792BA8D63700902BB6 /* QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D742157D2BA8D63700902BB6 /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		D742157F2BA8D63700902BB6 /* QuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D75AA0972BC29B6300690CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../WorldTrotter/WorldTrotter/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		D742155B2BA8D63500902BB6 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				D75AA0962BC29B6300690CF3 /* Main.storyboard */,
 				D742155C2BA8D63500902BB6 /* AppDelegate.swift */,
 				D742155E2BA8D63500902BB6 /* SceneDelegate.swift */,
 				D74215602BA8D63500902BB6 /* ViewController.swift */,
@@ -234,6 +237,7 @@
 				D74215662BA8D63600902BB6 /* Assets.xcassets in Resources */,
 				D74215692BA8D63600902BB6 /* Base in Resources */,
 				D74215642BA8D63500902BB6 /* Base in Resources */,
+				D75AA0982BC29B6300690CF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,14 @@
 				D74215682BA8D63600902BB6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D75AA0962BC29B6300690CF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75AA0972BC29B6300690CF3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

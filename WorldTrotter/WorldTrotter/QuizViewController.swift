@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
-//  Quiz
+//  QuizViewController.swift
+//  WorldTrotter
 //
-//  Created by David Pavlic on 18.03.2024.
+//  Created by David Pavlic on 07.04.2024.
 //
 
 import UIKit
 
-class QuizViewController: UIViewController {
+class QuizViewController : UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
@@ -39,9 +39,13 @@ class QuizViewController: UIViewController {
         answerLabel.text = answer
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         questionLabel.text = questions[currentQuestionIndex]
+        
+        print("QuizViewController loaded its view")
     }
+    
 }
-

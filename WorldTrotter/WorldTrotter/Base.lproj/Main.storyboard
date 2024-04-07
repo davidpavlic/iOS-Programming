@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,17 +84,79 @@
             </objects>
             <point key="canvasLocation" x="1647" y="725"/>
         </scene>
+        <!--Quiz-->
+        <scene sceneID="9sS-TN-AuY">
+            <objects>
+                <viewController id="inL-in-qRf" customClass="QuizViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aq2-iJ-HLT">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjE-UE-gsL">
+                                <rect key="frame" x="202.66666666666666" y="473" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2K-v6-It0">
+                                <rect key="frame" x="202.66666666666666" y="249" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehr-An-FZq">
+                                <rect key="frame" x="148.66666666666666" y="288" width="132.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="inL-in-qRf" eventType="touchUpInside" id="AiS-ET-CSi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bq-5I-voP">
+                                <rect key="frame" x="151.66666666666666" y="511" width="126.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="inL-in-qRf" eventType="touchUpInside" id="MZY-Ms-cry"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e0m-bn-nZs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ehr-An-FZq" firstAttribute="centerX" secondItem="r2K-v6-It0" secondAttribute="centerX" id="B1K-IU-Hf1"/>
+                            <constraint firstItem="JjE-UE-gsL" firstAttribute="centerX" secondItem="aq2-iJ-HLT" secondAttribute="centerX" id="WA9-yC-9LY"/>
+                            <constraint firstItem="r2K-v6-It0" firstAttribute="top" secondItem="e0m-bn-nZs" secondAttribute="top" constant="190" id="jbj-OL-hwK"/>
+                            <constraint firstItem="JjE-UE-gsL" firstAttribute="top" secondItem="ehr-An-FZq" secondAttribute="bottom" constant="150" id="jua-1I-FnJ"/>
+                            <constraint firstItem="ehr-An-FZq" firstAttribute="top" secondItem="r2K-v6-It0" secondAttribute="bottom" constant="18" id="q68-YA-O8Y"/>
+                            <constraint firstItem="5Bq-5I-voP" firstAttribute="top" secondItem="JjE-UE-gsL" secondAttribute="bottom" constant="17" id="s9T-vR-srF"/>
+                            <constraint firstItem="5Bq-5I-voP" firstAttribute="centerX" secondItem="r2K-v6-It0" secondAttribute="centerX" id="yXM-BM-W0r"/>
+                            <constraint firstItem="JjE-UE-gsL" firstAttribute="centerX" secondItem="r2K-v6-It0" secondAttribute="centerX" id="zsR-3T-vdo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="pencil" catalog="system" id="GbU-73-VUd"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="JjE-UE-gsL" id="SLT-bI-EgR"/>
+                        <outlet property="questionLabel" destination="r2K-v6-It0" id="0PU-7v-wpJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmv-F2-0Rl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="-701"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YX0-g6-eKg">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="y6w-ST-YDH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jnr-Dj-SEH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="OwU-YE-r7M"/>
+                        <segue destination="inL-in-qRf" kind="relationship" relationship="viewControllers" id="XHM-bC-uVP"/>
                         <segue destination="y5t-76-Fdg" kind="relationship" relationship="viewControllers" id="Qae-yY-emx"/>
                     </connections>
                 </tabBarController>
@@ -105,5 +168,9 @@
     <resources>
         <image name="ConvertIcon" width="48.333332061767578" height="32.333332061767578"/>
         <image name="MapIcon" width="48.333332061767578" height="32.333332061767578"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
